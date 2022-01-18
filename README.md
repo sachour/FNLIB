@@ -7,11 +7,11 @@ I am not a co-author of this code
 ```
 make
 ```
-4. In your terminal, run 
+3. In your terminal, run 
 ```
 make test
 ```
-6. In your terminal, run the file INIT.zsh
+4. In your terminal, run the file INIT.zsh
 
 ## Instructions for use in fortran file
 1. Add use fnlib before implict none and after the beginning of the program keyword in the following way
@@ -28,4 +28,4 @@ subroutine mysub()
   ...
 end subroutine
 ```
-3. When compiling your code add the linking flags "$(LINKTOFNLIB) -J$(modpath)" in your Makefile or "$LINKTOFNLIB -J$modpath" if compiling from the terminal directly
+2. When compiling your code add the linking flags "$(LINKTOFNLIB) -J$(modpath)" in your Makefile or "$LINKTOFNLIB -J$modpath" if compiling from the terminal directly
