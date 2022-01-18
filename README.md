@@ -28,4 +28,11 @@ subroutine mysub()
   ...
 end subroutine
 ```
-2. When compiling your code add the linking flags "$(LINKTOFNLIB) -J$(modpath)" in your Makefile or "$LINKTOFNLIB -J$modpath" if compiling from the terminal directly
+2. When compiling your code add the linking flags "$(LINKTOFNLIB) -J$(modpath)" in your Makefile
+```
+gfortran -o PROG $(LINKTOFNLIB) -J$(modpath)
+```
+   or "$LINKTOFNLIB -J$modpath" if compiling from the terminal directly.
+```
+gfortran -o PROG $LINKTOFNLIB -J$modpath
+```
