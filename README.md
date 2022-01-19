@@ -15,13 +15,13 @@ make test
 
 ## Instructions for use in fortran file
 1. Add use fnlib before implict none and after the beginning of the program keyword in the following way
-```
+```Fortran
 program main
   use fnlib
   implict none
 ```
 
-```
+```Fortran
 subroutine mysub()
   use fnlib
   implict none
